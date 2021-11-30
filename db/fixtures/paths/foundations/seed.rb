@@ -68,96 +68,106 @@ course.add_section do |section|
   )
 end
 
+# # +++++++++++++++++++++++++++++++
+# # SECTION - HTML
+# # +++++++++++++++++++++++++++++++
+# course.add_section do |section|
+#   section.title = 'HTML Foundations'
+#   section.description = 'Learn the foundations of HTML, a fundamental building block of everything on the web.'
+#   section.identifier_uuid = '8b6abb7a-095f-4c1d-b81f-e348aaaf2894'
+
+#   section.add_lessons(
+#     foundation_lessons.fetch('Introduction to HTML and CSS'),
+#     foundation_lessons.fetch('Elements and Tags'),
+#     foundation_lessons.fetch('HTML Boilerplate'),
+#     foundation_lessons.fetch('Working with Text'),
+#     foundation_lessons.fetch('Lists'),
+#     foundation_lessons.fetch('Links and Images'),
+#     foundation_lessons.fetch('Recipes'),
+#   )
+# end
+
+# # +++++++++++++++++++++++++++++++
+# # SECTION - CSS Basics
+# # +++++++++++++++++++++++++++++++
+# course.add_section do |section|
+#   section.title = 'CSS Foundations'
+#   section.description = 'Learn how to make your HTML look the way you want by adding styles with CSS.'
+#   section.identifier_uuid = 'd2476929-d71b-4b25-969b-8f7da6a40c94'
+
+#   section.add_lessons(
+#     foundation_lessons.fetch('CSS Foundations'),
+#     foundation_lessons.fetch('Inspecting HTML and CSS'),
+#     foundation_lessons.fetch('The Box Model'),
+#     foundation_lessons.fetch('Block and Inline'),
+#   )
+# end
+
+# # +++++++++++++++++++++++++++++++
+# # SECTION - HTML
+# # +++++++++++++++++++++++++++++++
+# course.add_section do |section|
+#   section.title = 'Flexbox'
+#   section.description = 'Learn how to put things exactly where you want them on your web projects using flexbox.'
+#   section.identifier_uuid = '1cac0d64-f276-4999-8ff1-85d37797c312'
+
+#   section.add_lessons(
+#     foundation_lessons.fetch('Introduction'),
+#     foundation_lessons.fetch('Growing and Shrinking'),
+#     foundation_lessons.fetch('Axes'),
+#     foundation_lessons.fetch('Alignment'),
+#     foundation_lessons.fetch('Landing Page'),
+#   )
+# end
+
 # +++++++++++++++++++++++++++++++
-# SECTION - HTML
+# SECTION - Full Stack
 # +++++++++++++++++++++++++++++++
 course.add_section do |section|
-  section.title = 'HTML Foundations'
-  section.description = 'Learn the foundations of HTML, a fundamental building block of everything on the web.'
-  section.identifier_uuid = '8b6abb7a-095f-4c1d-b81f-e348aaaf2894'
-
-  section.add_lessons(
-    foundation_lessons.fetch('Introduction to HTML and CSS'),
-    foundation_lessons.fetch('Elements and Tags'),
-    foundation_lessons.fetch('HTML Boilerplate'),
-    foundation_lessons.fetch('Working with Text'),
-    foundation_lessons.fetch('Lists'),
-    foundation_lessons.fetch('Links and Images'),
-    foundation_lessons.fetch('Recipes'),
-  )
-end
-
-# +++++++++++++++++++++++++++++++
-# SECTION - CSS Basics
-# +++++++++++++++++++++++++++++++
-course.add_section do |section|
-  section.title = 'CSS Foundations'
-  section.description = 'Learn how to make your HTML look the way you want by adding styles with CSS.'
-  section.identifier_uuid = 'd2476929-d71b-4b25-969b-8f7da6a40c94'
-
-  section.add_lessons(
-    foundation_lessons.fetch('CSS Foundations'),
-    foundation_lessons.fetch('Inspecting HTML and CSS'),
-    foundation_lessons.fetch('The Box Model'),
-    foundation_lessons.fetch('Block and Inline'),
-  )
-end
-
-# +++++++++++++++++++++++++++++++
-# SECTION - HTML
-# +++++++++++++++++++++++++++++++
-course.add_section do |section|
-  section.title = 'Flexbox'
-  section.description = 'Learn how to put things exactly where you want them on your web projects using flexbox.'
-  section.identifier_uuid = '1cac0d64-f276-4999-8ff1-85d37797c312'
-
-  section.add_lessons(
-    foundation_lessons.fetch('Introduction'),
-    foundation_lessons.fetch('Growing and Shrinking'),
-    foundation_lessons.fetch('Axes'),
-    foundation_lessons.fetch('Alignment'),
-    foundation_lessons.fetch('Landing Page'),
-  )
-end
-
-# +++++++++++++++++++++++++++++++
-# SECTION - JavaScript Basics
-# +++++++++++++++++++++++++++++++
-course.add_section do |section|
-  section.title = 'JavaScript Basics'
-  section.description = 'Here we finally dig into JavaScript and learn how to make the web dynamic.'
+  section.title = 'Full Stack Fundamentals'
+  section.description = 'Choose this sub-course to dive into foundational concepts specific to full stack web development, such as HTML, CSS, and JavaScript'
   section.identifier_uuid = '331227f7-c939-4988-b8b9-e140d2ded362'
 
-  section.add_lessons(
-    foundation_lessons.fetch('Fundamentals Part 1'),
-    foundation_lessons.fetch('Fundamentals Part 2'),
-    foundation_lessons.fetch('JavaScript Developer Tools'),
-    foundation_lessons.fetch('Fundamentals Part 3'),
-    foundation_lessons.fetch('Problem Solving'),
-    foundation_lessons.fetch('Understanding Errors'),
-    foundation_lessons.fetch('Rock Paper Scissors'),
-    foundation_lessons.fetch('Clean Code'),
-    foundation_lessons.fetch('Fundamentals Part 4'),
-    foundation_lessons.fetch('DOM manipulation'),
-    foundation_lessons.fetch('Etch-a-Sketch'),
-    foundation_lessons.fetch('Fundamentals Part 5'),
-    foundation_lessons.fetch('Calculator'),
-  )
+  # section.add_lessons(
+  #   foundation_lessons.fetch('Fundamentals Part 1'),
+  #   foundation_lessons.fetch('Fundamentals Part 2'),
+  #   foundation_lessons.fetch('JavaScript Developer Tools'),
+  #   foundation_lessons.fetch('Fundamentals Part 3'),
+  #   foundation_lessons.fetch('Problem Solving'),
+  #   foundation_lessons.fetch('Understanding Errors'),
+  #   foundation_lessons.fetch('Rock Paper Scissors'),
+  #   foundation_lessons.fetch('Clean Code'),
+  #   foundation_lessons.fetch('Fundamentals Part 4'),
+  #   foundation_lessons.fetch('DOM manipulation'),
+  #   foundation_lessons.fetch('Etch-a-Sketch'),
+  #   foundation_lessons.fetch('Fundamentals Part 5'),
+  #   foundation_lessons.fetch('Calculator'),
+  # )
 end
 
 # +++++++++++++++++++++++++++++++
-# SECTION - The Back End
+# SECTION - Data Analysis
 # +++++++++++++++++++++++++++++++
 course.add_section do |section|
-  section.title = 'The Back End'
-  section.description = "Here you'll learn about the back end, where we'll demystify what goes on behind the scenes on a web server."
-  section.identifier_uuid = '1bda637d-2590-4e0e-b988-a74605d09a8a'
+  section.title = 'Data Analysis Fundamentals'
+  section.description = 'Choose this sub-course to learn the fundamental tools required to programmatically analyze data, such as Python, Pandas, and SQL.'
+  section.identifier_uuid = '331227f7-c939-abcd-b8b9-e140d2ded362'
 
-  section.add_lessons(
-    foundation_lessons.fetch('Introduction to the Back End'),
-    foundation_lessons.fetch('Introduction to Frameworks'),
-  )
 end
+
+# # +++++++++++++++++++++++++++++++
+# # SECTION - The Back End
+# # +++++++++++++++++++++++++++++++
+# course.add_section do |section|
+#   section.title = 'The Back End'
+#   section.description = "Here you'll learn about the back end, where we'll demystify what goes on behind the scenes on a web server."
+#   section.identifier_uuid = '1bda637d-2590-4e0e-b988-a74605d09a8a'
+
+#   section.add_lessons(
+#     foundation_lessons.fetch('Introduction to the Back End'),
+#     foundation_lessons.fetch('Introduction to Frameworks'),
+#   )
+# end
 
 # +++++++++++++++++++++++++++++++
 # SECTION - Conclusion

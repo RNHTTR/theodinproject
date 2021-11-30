@@ -1,16 +1,52 @@
 <% sections.each do |section| %>
-  <div class="card-main course-section">
-    <h3 id=<%= section.title.parameterize %> class="course-section__title">
-      <a class="internal-link" href= "#<%= section.title.parameterize %>" >
-        <%= section.title %>
-      </a>
-    </h3>
-    <p class="course-section__description"><%= section.description %></p>
+  <% if section.title == "Full Stack Fundamentals" %>
+      <div class="row">
+        <div class="col-xl-6">
+          <div class="card-main course-section">
+            <h3 id=<%= section.title.parameterize %> class="course-section__title">
+              <a class="internal-link" href= "#<%= section.title.parameterize %>" >
+                <%= section.title %>
+              </a>
+            </h3>
+            <p class="course-section__description"><%= section.description %></p>
+            <%= button_to 'View Sub-course', "foundations/courses/foundations/full_stack", method: :get, class: 'button button--secondary card-main__button' %>
+            <%= render 'courses/course/section-lessons',
+              lessons: section.lessons,
+              course: course
+            %>
+          </div>
+        </div>
+    <% elsif section.title == "Data Analysis Fundamentals" %>
+        <div class="col-xl-6">
+          <div class="card-main course-section">
+            <h3 id=<%= section.title.parameterize %> class="course-section__title">
+              <a class="internal-link" href= "#<%= section.title.parameterize %>" >
+                <%= section.title %>
+              </a>
+            </h3>
+            <p class="course-section__description"><%= section.description %></p>
+            <%= button_to 'View Sub-course', "foundations/courses/foundations/data-analysis", method: :get, class: 'button button--secondary card-main__button' %>
+            <%= render 'courses/course/section-lessons',
+              lessons: section.lessons,
+              course: course
+            %>
+          </div>
+        </div>
+      </div>
+    <% else %>
+    <div class="card-main course-section">
+      <h3 id=<%= section.title.parameterize %> class="course-section__title">
+        <a class="internal-link" href= "#<%= section.title.parameterize %>" >
+          <%= section.title %>
+        </a>
+      </h3>
+      <p class="course-section__description"><%= section.description %></p>
 
-    <%= render 'courses/course/section-lessons',
-      lessons: section.lessons,
-      course: course
-    %>
+      <%= render 'courses/course/section-lessons',
+        lessons: section.lessons,
+        course: course
+      %>
 
-  </div>
+    </div>
+    <% end %>
 <% end %>
